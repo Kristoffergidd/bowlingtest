@@ -21,8 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./BOWLINGTEST # Ensure this path is correct
+        working-directory: ./bowlingtest # Ensure this path is correct
 
       - name: Run tests
         run: npm test
-        working-directory: ./BOWLINGTEST # Ensure this path is correct
+        working-directory: ./bowlingtest # Ensure this path is correct
