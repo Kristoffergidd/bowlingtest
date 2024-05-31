@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
 test('mocks a POST request', async () => {
-  const bookingInfo = { date: '2024-06-12T18:00', lanes: 1, people: 4 };
+  const bookingInfo = { date: '2024-06-06T12:00', lanes: 1, people: 1 };
 
   const response = await fetch('https://h5jbtjv6if.execute-api.eu-north-1.amazonaws.com', {
     method: 'POST',
