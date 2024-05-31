@@ -17,10 +17,10 @@ test('mocks a POST request', async () => {
   expect(result).toEqual({
     active: true,
     id: 'STR2101YPJD',
-    lanes: "1",  // Adjusted to match the mock response
-    people: "1",  // Adjusted to match the mock response
+    lanes: "1",  
+    people: "1",  
     price: 220,
-    shoes: ["42"],  // Added to match the mock response
+    shoes: ["42"],  
     when: '2024-06-06T12:00',
   });
 });

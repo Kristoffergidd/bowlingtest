@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import BookingInfo from './BookingInfo';
 import { beforeEach, test, expect, vi } from 'vitest';
 
-// Mock functions for BookingInfo
+
 const updateBookingDetails = vi.fn();
 
 beforeEach(() => {
@@ -11,10 +11,10 @@ beforeEach(() => {
 });
 
 test('renders BookingInfo component', () => {
-  // Check heading in BookingInfo
+
   expect(screen.getByRole('heading', { level: 2, name: /When, WHAT & Who/i })).toBeInTheDocument();
 
-  // Check inputs by finding the labels and then their associated inputs
+ 
   expect(screen.getByText(/Date/i).nextElementSibling).toHaveAttribute('type', 'date');
   expect(screen.getByText(/Time/i).nextElementSibling).toHaveAttribute('type', 'time');
   expect(screen.getByText(/Number of awesome bowlers/i).nextElementSibling).toHaveAttribute('type', 'number');
